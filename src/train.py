@@ -24,7 +24,7 @@ def main(args, splits):
     avg_spr = AverageMeter()
     for split_idx, split in enumerate(splits):
         set_seed(34123312)
-        wandb.init(project='Video-Summarization', entity='berserkermother',
+        wandb.init(project='Video-Summarization', entity='aviral241202',
                    name=args.__str__()[10:-1], config=args, reinit=True)
         wandb.config.seed = 34123312
         logging.info(f"\nSplit {split_idx + 1}")
